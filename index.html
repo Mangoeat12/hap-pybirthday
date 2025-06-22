@@ -1,63 +1,124 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
 
-    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+  <style>
+body {
+    background-image: url(BACKGOUND\ .jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    
+    img {
+        width: 100%;
+    }
+
+    .birth-people-name {
+        text-align: center;
+        font-size: 70px;
+        color: #f0061e;
+        letter-spacing: -7px;
+        font-weight: 700;
+        text-transform: uppercase;
+        animation: brith-sway-animation 2s ease-out infinite;
+        text-shadow: 0 0 5px #fff, 0 0 7px #fff;
+    }
+
+    .birth-greeting-word {
+        font-size: 25px;
+        color: #8c0021;
+        text-align: center;
+    }
+
+    .birth-inline-people-name {
+        text-transform: capitalize;
+    }
+
+    .birth-cake {
+        text-align: center;
+        
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        border: 1px solid #000000;
+        background-color: black;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .btn a {
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        text-decoration: none;
+        display: block;
+        line-height: 40px;
+    }
+
+    .btn:hover {
+        background: gray;
+    }
+
+    @keyframes brith-sway-animation {
+        0% { transform: rotateZ(0); }
+        25% { transform: rotateZ(10deg); }
+        50% { transform: rotateZ(0deg); }
+        75% { transform: rotateZ(-10deg); }
+    }
+    .cake{
+        height: 500px;
+        width: auto;
+    }
+    .text{
+        text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- Music -->
-    <audio class="song" autoplay loop style="display: none; opacity: 0">
-        <source src="music/index.mp3" />
-    </audio>
+    <!-- Cake -->
+  <div class="text">
+    <img src="birthday text .png" alt="Birthday Cake" style="max-width: 300px;"/>
+  </div>
 
-    <!-- Confetti -->
-    <canvas id="brith-confetti"></canvas>
+  <!-- Background Music -->
+  <audio autoplay loop style="display: none;">
+    <source src="https://github.com/Mangoeat12/hap-pybirthday/raw/main/music/index.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-    <!-- Main Content -->
-    <div class="main">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-12 col-xl-6 mx-auto">
-                    <img src="img/banner.png" alt="Birthday Banner">
-                </div>
+  
 
-                <div class="col-12 text-center">
-                    <div id="name" class="birth-people-name">DARLINGAAAAAAAAAAA</div>
-                </div>
+  <!-- Name -->
+  <div id="name" class="birth-people-name">DARLINGAAAAAAAAAAA</div>
+  <div class="birth-cake">
+    <img src="cake panda.png" alt="Birthday Banner" class="cake "/>
+   </div>
 
-                <div class="col-12 text-center">
-                    <div class="birth-greeting-word">
-                        <div id="greeting-word" class="typing">
-                            <h2><span>Happy Birthday, </span><i id="inline-name" class="birth-inline-people-name">DARLINGAAAAAAAAAAA</i><span id="people-type"> dear</span></h2>
-                            <h2>May your days be filled with joy and love</h2>
-                            <h2>Every moment, every smile, every dream come true</h2>
-                            <h2>Wishing you a magical birthday and a wonderful year</h2>
-                        </div>
-                        <span id="typed" style="white-space: pre;"></span>
-                    </div>
-                </div>
+  <!-- Greeting -->
+  <div class="birth-greeting-word">
+    <h2><span>Happy Birthday, </span>
+      <i class="birth-inline-people-name">DARLINGAAAAAAAAAAA</i>
+      <span> dear</span>
+    </h2>
+    <h2>May your days be filled with joy and love</h2>
+    <h2>Every moment, every smile, every dream come true</h2>
+    <h2>Wishing you a magical birthday and a wonderful year</h2>
+  </div>
 
-                <div class="col-12 col-xl-3 birth-cake">
-                    <img src="img/cake.gif" alt="Birthday Cake">
-                </div>
-
-                <div class="col-12 text-center">
-                   <button class="btn" > <a href="vedio background.html"> click here</a></button>
-                </div>
-            </div>
-        </div>
-
-        <img src="img/balloon.png" alt="Balloon" class="brith-balloon">
-    </div>
-
-    <script src="js/lib/snowflakes.min.js"></script>
-    <script src="js/lib/jquery.min.js"></script>
-    <script src="js/lib/typed.min.js"></script>
-    <script src="js/lib/dayjs.min.js"></script>
-    <script src="js/confetti.js"></script>
-    <script src="js/index.js"></script>
+  <!-- Cake -->
+<!-- Main Banner -->
+ 
+  <!-- Button -->
+  <div class="btn">
+    <a href="vedio background.html">Click Here</a>
+  </div>
 </body>
 </html>
